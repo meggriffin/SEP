@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snake.view.GameGraphicsViewController">
+   <children>
+      <Canvas fx:id="canvas" height="500.0" width="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Label fx:id="highscore" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="319.0" layoutY="14.0" prefHeight="28.0" prefWidth="267.0" text="highscore" textAlignment="JUSTIFY" textFill="#ff0099" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="8.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

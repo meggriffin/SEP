@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snake.view.StartScreenViewController">
+   <children>
+      <Button fx:id="playButton" layoutX="200.0" layoutY="35.0" mnemonicParsing="false" onAction="#handlePlayButton" prefHeight="50.0" prefWidth="250.0" text="PLAY" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="35.0" />
+      <Button fx:id="optionsButton" layoutX="175.0" layoutY="106.0" mnemonicParsing="false" onAction="#handleOptionsButton" prefHeight="50.0" prefWidth="300.0" text="OPTIONS" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="105.0" style="-fx-font-size: 20" />
+      <Button fx:id="creditsButton" layoutX="150.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleCreditsButton" prefHeight="50.0" prefWidth="300.0" text="CREDITS" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="175.0" />
+      <Button fx:id="helpButton" layoutX="175.0" layoutY="244.0" mnemonicParsing="false" onAction="#handleHelpButton" prefHeight="50.0" prefWidth="250.0" text="HELP" AnchorPane.topAnchor="245.0" />
+      <Button fx:id="quitButton" layoutX="200.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleQuitButton" prefHeight="50.0" prefWidth="200.0" text="QUIT" AnchorPane.topAnchor="315.0" />
+   </children>
+</AnchorPane>

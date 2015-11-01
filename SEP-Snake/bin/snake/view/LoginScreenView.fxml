@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snake.view.LoginScreenViewController">
+   <children>
+      <Label fx:id="label" layoutX="272.0" layoutY="32.0" text="WELCOME" />
+      <Button fx:id="signIn" layoutX="72.0" layoutY="112.0" mnemonicParsing="false" onAction="#handleSignInButton" prefHeight="50.0" prefWidth="200.0" text="SIGN IN" />
+      <Button fx:id="signUp" layoutX="329.0" layoutY="112.0" mnemonicParsing="false" onAction="#handleSignUpButton" prefHeight="50.0" prefWidth="200.0" text="SIGN UP" />
+      <Button fx:id="playOnline" layoutX="151.0" layoutY="190.0" mnemonicParsing="false" onAction="#handlePlayOnlineButton" prefHeight="50.0" prefWidth="300.0" text="PLAY ONLINE" />
+      <Button fx:id="skip" layoutX="151.0" layoutY="259.0" mnemonicParsing="false" onAction="#handleSkipButton" prefHeight="50.0" prefWidth="300.0" text="PLAY OFFLINE" />
+   </children>
+</AnchorPane>

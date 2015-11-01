@@ -1,0 +1,28 @@
+@Balthasar: 01.11.2015 09:36
+
+	->Implementend game loop and made necassary changes to affected classes.
+		@Description: game loop calls for each element in the entity list the method update(ticktime)
+		
+	->Implemented new canvas update based on mapChanges. Created new helper class for this purpose.
+		!DANGER!: For this to work: use gameInstance.addElementToMap() and gameInstance.removeElementfromMap()
+		-> it automatically adds them to the corresponing list of the helper class
+		-> Don't use map.getMapElements.add()!!
+	
+	->Created new helper class for the calculation of the next snake step
+		@Description: stores the key input into a list of SnakeHeadDirection enums. 
+		On Snake do step. removes the current snake direction and the opposite.
+		-> if size = 1 the content has to be the new direction
+		-> else -> the previous direction will be kept.
+		-> after doing a step the snake clears the list for further inputs
+		-> maybe we should synchronisize the methods for this feature
+
+	->NEW BUG! Found no solution so far:
+		@Description: The game loop iterates through the stack of game entities.
+		If an entities lifetime reaches zero it tries to delete itself from the game entities list.
+		Java does not allow this. I tried to solve this via a Iterator, no success.
+		Maybe starting adding this command to the commandthread (like in addPointsToHighscore) could fix this problem. 
+	
+	->I apologize for missing comments. They will follow ASAP
+
+	->I suggest adding to features in this changelog on top, so that the most recentchange is visible at opening the document.
+		 
